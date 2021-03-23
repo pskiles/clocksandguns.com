@@ -29,21 +29,12 @@
 
 <br>
 
-<button onclick="playSnd()" type="button">
+<button onclick="snd.play()" type="button">
 	<img src="cow dancing.gif" width="10" height"10">
 </button>
 
-<audio id="polishCow" preload="auto">
-	<source src="polishcow.mp3" type="audio/mpeg">
-</audio>
-
 <script>
-var snd document.getElementById("polishCow");
-
-function playSnd() {
-	snd.play();
-	snd.loop();
-}
+var snd = new Audio("polishcow.mp3");
 </script>
 
 <h6>
